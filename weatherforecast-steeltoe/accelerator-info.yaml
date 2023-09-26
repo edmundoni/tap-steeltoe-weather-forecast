@@ -1,0 +1,15 @@
+id: e0483ae0-dd30-4133-a6d6-543ba4310794
+timestamp: 2023-09-26T14:17:46Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: weatherforecast-steeltoe
+  source:
+    image: europe-west2-docker.pkg.dev/falconwings-vmware/tap-demo/tap-packages@sha256:3b39cff74bc2af1874c2c2b8e734cc45dee2efd8c9370b61ec3def9080803a11
+fragments:
+  - name: tap-workload
+    source:
+      image: europe-west2-docker.pkg.dev/falconwings-vmware/tap-demo/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  applicationName: Sample
+  projectName: weatherforecast-steeltoe
