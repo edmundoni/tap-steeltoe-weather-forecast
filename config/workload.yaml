@@ -13,8 +13,11 @@ spec:
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
+  - name: testing_pipeline_matching_labels
+    value:
+      apps.tanzu.vmware.com/pipeline: test-dotnet
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/edmundoni/tap-steeltoe-weather-forecast.git
       ref:
         branch: main
